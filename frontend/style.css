@@ -34,22 +34,28 @@ main{
 }
 
 main h1{
+    text-align: center;
     font-family: var(--fonte-titulo);
     font-size: 2.6em;
-    color: white 
+    color: white;
+    text-shadow: 4px 3px 10px rgba(0, 0, 0, 0.562);
 }
 
 main h2{
+    text-align: center;
     font-family: var(--fonte-sub-titulo);
 }
 
 main p {
     font-family: var(--fonte-paragrafo);
-    line-height: 1.2em;
+    line-height: 1.7em;
     font-size: 1.1em;
+    text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.438);
 }
 
 header{
+    position: fixed;
+    z-index: 999;
     width: 100%;
     min-height: 80px;
     background-color: white;
@@ -88,8 +94,9 @@ nav img{
     text-align: center;
     background-image: url('imagens/');
     width: 100%;
-    height: 870px;
+    height: 100vh;
     background-color: rgba(5, 5, 5, 0.226);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.192);
 }
 
 #sobre{
@@ -97,34 +104,96 @@ nav img{
     padding-top: 60px;
     width: 100%;
     background-color: rgba(163, 86, 86, 0.795);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.192);
 }
 
 #container-sobre-nos{
-    margin: 100px;
+    margin: 80px;
     color: white;
     text-align: justify;
     justify-self: center;
 }
 
 #container-card-sobre-nos{
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    padding: 80px;
+    gap: 40px;
+    justify-content: center;
 }
 
 .card-sobre-nos{
-    margin: 40px;
     border: 1px solid black;
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition-duration: 0.5s;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.219);
+}
+
+.card-sobre-nos:hover{
+    transform: scale(1.01);
 }
 
 .card-sobre-nos > h2{
-    background-color: rgba(255, 255, 255, 0.295);
+    background-color: rgb(70, 42, 42);
     padding: 10px;
     color: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .card-sobre-nos > p{
-    padding: 10px;
-    text-align: justify;
+    padding: 5px;
     font-size: 1.0em;
 }
+
+
+#pacotes{
+    padding-top: 60px;
+    width: 100%;
+    background-color: rgba(49, 27, 27, 0.795);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.192);
+}
+
+#pacotes > h1{
+    margin-bottom: 58px;
+}
+
+#container-card-packs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 100px;
+}
+
+.card-packs{
+    border: 1px solid black;
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-width: 500px;
+    height: 300px;
+    transition-duration: 0.5s;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.219);
+}
+
+.card-packs:hover{
+    transform: scale(1.01);
+}
+
+.card-packs h2{
+    background-color: rgb(70, 42, 42);
+    padding: 10px;
+    color: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-packs > ul{
+    list-style: none;
+    font-size: 1.0em;
+    padding: 15px;
+    list-style-position: inside;
+}
+
