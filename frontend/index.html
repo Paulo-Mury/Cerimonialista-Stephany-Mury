@@ -323,8 +323,9 @@
                 </div>
                 <div class="carousel-dots" id="dots"></div>
             </div>
+            <button class="btn-abrir-modal">Quero um Orçamento</button>
         </section>
-
+        
     </main> 
     <footer class="footer-principal">
         <div class="footer-container">
@@ -356,10 +357,11 @@
         <div class="modal-box">
             <button class="modal-fechar" id="btn-fechar">&times;</button>
             <h3>Quero um Orçamento</h3>
-            <form>
-            <input type="text" placeholder="Seu nome" />
-            <input type="email" placeholder="Seu e-mail" />
-            <textarea placeholder="Sua mensagem"></textarea>
+            <form id="form-orcamento">
+            <input type="text" id="nome" placeholder="Seu nome" required/>
+            <input type="email" id="email" placeholder="Seu e-mail" required/>
+            <input type="text" id="evento" placeholder="Tipo de Evento (Casamento, 15 anos...)" required/>
+            <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
             <button type="submit">Enviar</button>
             </form>
         </div>

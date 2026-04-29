@@ -1,3 +1,5 @@
+// CONFIGURAÇÃO CAROUSEL DEPOIMENTOS
+
 (function () {
   const track    = document.getElementById('track');
   const btnPrev  = document.getElementById('btn-prev');
@@ -134,18 +136,44 @@
   init();
 })();
 
-const modal    = document.getElementById('modal');
+
+// CONFIGURAÇÃO MODAL
+const form = document.getElementById('form-orcamento');
+const modal = document.getElementById('modal');
 const btnFechar = document.getElementById('btn-fechar');
- 
-// Seleciona TODOS os botões de abrir modal pela classe
+
+const fecharELimparModal = () => {
+    modal.classList.remove('ativo');
+    if (form) form.reset();
+};
+
 document.querySelectorAll('.btn-abrir-modal').forEach(btn => {
-  btn.addEventListener('click', () => modal.classList.add('ativo'));
+    btn.addEventListener('click', () => modal.classList.add('ativo'));
 });
- 
-// Botão X fecha
-btnFechar.addEventListener('click', () => modal.classList.remove('ativo'));
- 
-// Clicou fora da caixinha → fecha
+btnFechar.addEventListener('click', fecharELimparModal);
+
 modal.addEventListener('click', (e) => {
-  if (e.target === modal) modal.classList.remove('ativo');
+    if (e.target === modal) fecharELimparModal();
+});
+
+// CONFIGURAÇÃO FORMULÁRIO MODAL 
+document.addEventListener('submit', (e) => {
+    if (e.target.id === 'form-orcamento') {
+        e.preventDefault();
+
+        const id = "4410848015600"; 
+        
+        const n = id.split('').map(d => parseInt(d) + 1).join('');
+        
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const evento = document.getElementById('evento').value;
+        const mensagem = document.getElementById('mensagem').value;
+
+        const texto = `*Novo Orçamento*%0A%0A*Nome:* ${nome}%0A*E-mail:* ${email}%0A*Evento:* ${evento}%0A*Mensagem:* ${mensagem}`;
+
+        window.open(`https://api.whatsapp.com/send?phone=${n}&text=${texto}`, '_blank');
+
+        fecharELimparModal();
+    }
 });
