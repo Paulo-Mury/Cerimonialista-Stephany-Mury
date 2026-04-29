@@ -120,7 +120,7 @@ nav a {
     border-radius: 2px;
 }
 
-@media (min-width: 805px) {
+@media (min-width: 835px) {
     .navbar-brand-mobile, .hamburguer-btn {
         display: none;
     }
@@ -134,7 +134,7 @@ nav a {
     }
 }
 
-@media (max-width: 805px) {
+@media (max-width: 835px) {
     .menu-desktop {
         display: none !important;
         visibility: hidden;
@@ -371,18 +371,20 @@ nav a {
     font-size: 1.01em;
 }
 
-.container-card-events > button{
+.container-card-events > button {
     display: block;
-    min-width: 60%;
+    min-width: 180px;
     align-self: center;
-    padding: 15px;
-    font-size: 1.1em;
-    font-weight: bolder;
-    border-radius: 8px;
-    background-color: var(--cor0);
+    padding: 12px 25px;
+    font-size: 0.95em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 50px;
     margin-top: auto;
-    border: 0px;
     cursor: pointer;
+    background-color: transparent;
+    color: var(--cor0);
+    border: 1px solid var(--cor0);
 }
 
 #card-events1{
@@ -417,6 +419,7 @@ nav a {
     max-width: 100%;
     justify-self: center;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .card-gallery{
@@ -468,7 +471,8 @@ nav a {
     flex-wrap: wrap;
     width: 100%;
     align-items: stretch;
-    padding: 0px 0px 60px 0px;
+    padding: 0px 0px 5px 0px;
+    margin-bottom: 20px;
 }
 
 .carousel.slide{
@@ -538,11 +542,9 @@ nav a {
 }
 
 .card-blog{
-    background-color: var(--cor1);
-    color: white;
     padding: 20px;
     display: flex;
-    border: 1px solid rgba(0, 0, 0, 0.151);
+    border: 1px solid rgba(95, 95, 95, 0.151);
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -554,6 +556,287 @@ nav a {
 
 .card-blog > p{
     font-size: 0.8em;
+}
+
+#sobre-mim {
+    background-color: #fefefe;
+    margin-top: 50px;
+}
+
+.container-sobre {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.perfil-foto{
+    justify-self: center;
+    padding-top: 20px;
+}
+
+.perfil-foto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--cor0);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.perfil-texto h2 {
+    font-size: 2.8em;
+    color: var(--cor0);
+    margin-bottom: 15px;
+}
+
+.frase-efeito {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #555;
+    margin: 25px 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+.perfil-texto p {
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+#experiencia{
+    text-align: center;
+    padding: 60px 20px;
+    background: url('imagens/Gemini_Generated_Image_ta2ohqta2ohqta2o.png') center center no-repeat scroll;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+#experiencia h1{
+    max-width: 600px;
+    justify-self: center;
+    margin-bottom: 40px;
+    font-size: 2.0em;
+    color: white;
+    background-image: none;
+}
+
+#container-card-experiencia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card-experiencia{
+    text-align: center;
+    min-width: 200px;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.521);
+    font-size: 1.2em;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+#depoimentos {
+  padding: 60px 40px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#depoimentos h2 {
+  font-size: 2.1rem;
+  color: #3b2a22;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: -0.5px;
+}
+
+#depoimentos h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #C9906C;
+  margin: 14px auto 0;
+  border-radius: 2px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.carousel-track-outer {
+  overflow: hidden;
+  flex: 1;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+}
+
+.card-depoimento {
+  flex: 0 0 calc((100% - 40px) / 3);
+  background-color: #aa8b70;
+  border-radius: 18px;
+  padding: 32px 28px 28px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+  box-shadow: 0 4px 20px rgba(59, 42, 34, 0.08);
+}
+
+.card-depoimento:hover {
+  box-shadow: 0 10px 32px rgba(59, 42, 34, 0.14);
+}
+
+.card-depoimento::before {
+  content: '\201C';
+  font-size: 5rem;
+  color: #ffffff;
+  opacity: 0.4;
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  line-height: 1;
+}
+
+.card-depoimento p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: white;
+  margin-top: 32px;
+  font-weight: 300;
+}
+
+.card-depoimento h4 {
+  font-style: italic;
+  font-size: 1rem;
+  color: white;
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(139, 94, 74, 0.25);
+}
+
+.carousel-btn {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #C9906C;
+  background: #faf6f3;
+  color: #C9906C;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.25s, color 0.25s, transform 0.2s;
+  box-shadow: 0 2px 10px rgba(59, 42, 34, 0.1);
+}
+
+.carousel-btn:hover:not(:disabled) {
+  transform: scale(1.08);
+}
+
+.carousel-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d4b5a8;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  padding: 0;
+}
+
+.dot.active {
+  background: #C9906C;
+  transform: scale(1.3);
+}
+
+@media (max-width: 900px) {
+  #depoimentos {
+    padding: 40px 24px;
+  }
+
+  #depoimentos h2 {
+    font-size: 2rem;
+    margin-bottom: 36px;
+  }
+
+  .carousel-track-outer {
+    --visible: 2;
+  }
+
+  .card-depoimento {
+    flex: 0 0 calc((100% - 20px) / 2);
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  #depoimentos {
+    padding: 32px 16px;
+  }
+
+  #depoimentos h2 {
+    font-size: 1.6rem;
+    margin-bottom: 28px;
+  }
+
+  .carousel-wrapper {
+    gap: 10px;
+  }
+
+  .carousel-track-outer {
+    --visible: 1;
+  }
+
+  .card-depoimento {
+    flex: 0 0 100%;
+    min-height: 200px;
+    padding: 28px 22px 22px;
+  }
+
+  .carousel-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
 }
 
 .footer-principal {
@@ -653,4 +936,53 @@ nav a {
     .footer-brand, .footer-contact-info {
         text-align: center;
     }
+}
+
+.btn-abrir-modal {
+    display: block;
+    min-width: 180px;
+    margin: 30px auto 0;
+    padding: 12px 25px;
+    font-size: 0.95em;
+    font-weight: 600;
+    letter-spacing: 1px; /* Espaçamento entre letras dá um ar profissional */
+    text-transform: uppercase;
+    border-radius: 50px; /* Bordas arredondadas (pill style) */
+    background-color: transparent;
+    color: var(--cor0);
+    border: 1px solid var(--cor0);
+    cursor: pointer;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay.ativo {
+  display: flex;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 880px;
+  position: relative;
+}
+
+.modal-fechar {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
