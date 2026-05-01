@@ -34,7 +34,7 @@
                         
                         <a href="#galeria">Gallery</a>
                         <a href="#blog">Blog</a>
-                        <a href="#sobre-me">About me</a>
+                        <a href="#sobre-mim">About me</a>
                         <a href="#contato">Contact</a>
                     </div>
                 </div>
@@ -192,13 +192,13 @@
                             data-bs-target="#ads" 
                             data-bs-slide-to="1"></button>
                             <button class="" 
-                                data-bs-target="ads" 
+                                data-bs-target="#ads" 
                                 data-bs-slide-to="2"></button>
                             <button class="" 
-                                data-bs-target="ads" 
+                                data-bs-target="#ads" 
                                 data-bs-slide-to="3"></button>
                             <button class="" 
-                                data-bs-target="ads" 
+                                data-bs-target="#ads" 
                                 data-bs-slide-to="4"></button>    
                         </div>
                     <div class="carousel-inner">
@@ -227,20 +227,20 @@
                 </div>
                 <div id="container-escrita-blog">
                     <div class="card-blog">
-                        <h2>oiii</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium porro aliquam reprehenderit quaerat beatae molestiae sapiente eligendi animi sed deserunt quam quasi error ducimus quibusdam voluptatem, quis rerum. Error, optio.</p>
+                        <h2>Planejamento</h2>
+                        <p>Organizar um casamento exige atenção aos detalhes. Desde a escolha do buffet até o cronograma da cerimônia, separamos os pontos essenciais para garantir que seu grande dia seja perfeito e livre de estresses.</p>
                     </div>
                      <div class="card-blog">
-                        <h2>oiii</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium porro aliquam reprehenderit quaerat beatae molestiae sapiente eligendi animi sed deserunt quam quasi error ducimus quibusdam voluptatem, quis rerum. Error, optio.</p>
+                        <h2>Tendências</h2>
+                        <p>As cores ditam o tom da sua festa! Explore as combinações que estão dominando os eventos de luxo este ano, desde tons terrosos minimalistas até o retorno vibrante das cores pastéis personalizadas.</p>
                     </div>
                      <div class="card-blog">
-                        <h2>oiii</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium porro aliquam reprehenderit quaerat beatae molestiae sapiente eligendi animi sed deserunt quam quasi error ducimus quibusdam voluptatem, quis rerum. Error, optio.</p>
+                        <h2>Debutantes</h2>
+                        <p>O tema da sua festa de 15 anos deve refletir sua personalidade. Se você está em dúvida entre o clássico "Princesa" ou algo mais moderno como "Neon Party", veja nossas dicas para decidir.</p>
                     </div>
                     <div class="card-blog">
-                        <h2>oiii</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium porro aliquam reprehenderit quaerat beatae molestiae sapiente eligendi animi sed deserunt quam quasi error ducimus quibusdam voluptatem, quis rerum. Error, optio.</p>
+                        <h2>Bastidores</h2>
+                        <p>Cada detalhe conta uma história. Conheça nosso processo de criação e veja como transformamos ambientes comuns em cenários inesquecíveis, focando sempre na identidade única de cada cliente.</p>
                     </div>
                 </div>
             </div>
@@ -359,8 +359,9 @@
             <h3>Quero um Orçamento</h3>
             <form id="form-orcamento">
             <input type="text" id="nome" placeholder="Seu nome" required/>
-            <input type="email" id="email" placeholder="Seu e-mail" required/>
             <input type="text" id="evento" placeholder="Tipo de Evento (Casamento, 15 anos...)" required/>
+            <input type="text" id="data" inputmode="numeric" placeholder="dd/mm/aaaa (Opcional)" maxlength="10"/>
+            <input type="text" id="local" placeholder="Local do evento (Opcional)"/>
             <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
             <button type="submit">Enviar</button>
             </form>

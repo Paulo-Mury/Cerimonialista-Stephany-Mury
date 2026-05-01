@@ -538,7 +538,7 @@ nav a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    flex: 1 1 50%;
+    flex: 1 1 49%;
 }
 
 .card-blog{
@@ -597,7 +597,7 @@ nav a {
     font-size: 1.2em;
     color: #555;
     margin: 25px 0px;
-    padding: 20px;
+    padding: 20px 20px 60px 20px;
     text-align: center;
 }
 
@@ -613,7 +613,6 @@ nav a {
     padding: 60px 20px;
     background: url('imagens/Gemini_Generated_Image_ta2ohqta2ohqta2o.png') center center no-repeat scroll;
     background-size: cover;
-    height: 500px;
     margin-bottom: 20px;
 }
 
@@ -695,7 +694,7 @@ nav a {
 
 .card-depoimento {
   flex: 0 0 calc((100% - 40px) / 3);
-  background-color: #aa8b70;
+  background-color: var(--cor0);
   border-radius: 18px;
   padding: 32px 28px 28px;
   position: relative;
@@ -703,39 +702,45 @@ nav a {
   flex-direction: column;
   justify-content: space-between;
   min-height: 220px;
-  box-shadow: 0 4px 20px rgba(59, 42, 34, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 
 .card-depoimento:hover {
-  box-shadow: 0 10px 32px rgba(59, 42, 34, 0.14);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .card-depoimento::before {
   content: '\201C';
   font-size: 5rem;
   color: #ffffff;
-  opacity: 0.4;
+  opacity: 0.2;
   position: absolute;
-  top: 8px;
+  top: 10px;
   left: 20px;
   line-height: 1;
+  font-family: serif;
 }
 
 .card-depoimento p {
-  font-size: 0.92rem;
-  line-height: 1.7;
-  color: white;
-  margin-top: 32px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  margin-top: 40px;
   font-weight: 300;
+  z-index: 1;
 }
 
 .card-depoimento h4 {
-  font-style: italic;
-  font-size: 1rem;
-  color: white;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ffffff;
   margin-top: 20px;
   padding-top: 14px;
-  border-top: 1px solid rgba(139, 94, 74, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .carousel-btn {

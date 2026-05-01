@@ -141,6 +141,14 @@
 const form = document.getElementById('form-orcamento');
 const modal = document.getElementById('modal');
 const btnFechar = document.getElementById('btn-fechar');
+const inputData = document.getElementById('data');
+
+inputData.addEventListener('input', (e) => {
+    let valor = e.target.value.replace(/\D/g, "");
+    if (valor.length > 2) valor = valor.substring(0, 2) + "/" + valor.substring(2);
+    if (valor.length > 5) valor = valor.substring(0, 5) + "/" + valor.substring(5, 9);
+    e.target.value = valor;
+});
 
 const fecharELimparModal = () => {
     modal.classList.remove('ativo');
@@ -166,11 +174,12 @@ document.addEventListener('submit', (e) => {
         const n = id.split('').map(d => parseInt(d) + 1).join('');
         
         const nome = document.getElementById('nome').value;
-        const email = document.getElementById('email').value;
         const evento = document.getElementById('evento').value;
+        const data = document.getElementById('data').value;
+        const local = document.getElementById('local').value;
         const mensagem = document.getElementById('mensagem').value;
 
-        const texto = `*Novo Orçamento*%0A%0A*Nome:* ${nome}%0A*E-mail:* ${email}%0A*Evento:* ${evento}%0A*Mensagem:* ${mensagem}`;
+        const texto = `*Novo Orçamento*%0A%0A*Nome:* ${nome}%0A*Evento:* ${evento}%0A*Data:* ${data}%0A*Local:* ${local}%0A*Mensagem:* ${mensagem}`;
 
         window.open(`https://api.whatsapp.com/send?phone=${n}&text=${texto}`, '_blank');
 
