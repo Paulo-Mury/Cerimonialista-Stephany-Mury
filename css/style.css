@@ -152,7 +152,7 @@ nav a {
 #imagem-principal{
     padding-top: 80px;
     text-align: center;
-    background: url('imagens/imagem\ principal.jpg!d    ') center center no-repeat fixed;
+    background: url('/assets/img/imagem\ principal.jpg!d') center center no-repeat fixed;
     background-size: cover;
     height: 100vh;
     background-color: rgba(5, 5, 5, 0.226);
@@ -256,7 +256,7 @@ nav a {
 
 
 #container-card-packs{
-    background: url('imagens/imagem\ fundo\ card\ packs.jfif') center center no-repeat scroll;
+    background: url('/assets/img/imagem\ fundo\ card\ packs.jfif') center center no-repeat scroll;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -388,21 +388,21 @@ nav a {
 }
 
 #card-events1{
-    background: url('imagens/Gemini_Generated_Image_fuepgwfuepgwfuep.png') center center scroll;
+    background: url('/assets/img/Gemini_Generated_Image_fuepgwfuepgwfuep.png') center center scroll;
     background-size: cover;
     width: 100%;
     height: 200px;
 }
 
 #card-events2{
-    background: url('imagens/Gemini_Generated_Image_82tqow82tqow82tq.png') center center no-repeat scroll;
+    background: url('/assets/img/Gemini_Generated_Image_82tqow82tqow82tq.png') center center no-repeat scroll;
     background-size: cover;
     width: 100%;
     height: 200px;
 }
 
 #card-events3{
-    background: url('imagens/Gemini_Generated_Image_knkb55knkb55knkb.png') center center no-repeat scroll;
+    background: url('/assets/img/Gemini_Generated_Image_knkb55knkb55knkb.png') center center no-repeat scroll;
     background-size: cover;
     width: 100%;
     height: 200px;
@@ -611,7 +611,7 @@ nav a {
 #experiencia{
     text-align: center;
     padding: 60px 20px;
-    background: url('imagens/Gemini_Generated_Image_ta2ohqta2ohqta2o.png') center center no-repeat scroll;
+    background: url('/assets/img/Gemini_Generated_Image_ta2ohqta2ohqta2o.png') center center no-repeat scroll;
     background-size: cover;
     margin-bottom: 20px;
 }
