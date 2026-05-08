@@ -180,19 +180,20 @@ nav a {
 }
 
 #sobre{
-    background-color: #bd2323;
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 70px;
+    justify-content: center;
+    text-align: center;
 }
 
 #container-sobre-nos{
     color: black;
-    background-color: #555;
     text-align: center;
     text-align: justify;
     font-weight: 500;
     text-indent: 30px;
-    max-width: 70%;
+    max-width: 80%;
     justify-self: center;
 }
 
