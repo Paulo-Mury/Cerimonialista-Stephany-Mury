@@ -59,6 +59,13 @@ main h1{
     }
 }
 
+@media (max-width: 370px){
+    main h1{
+        font-size: 1.7em;
+        max-width: 50%;
+    }
+}
+
 main h2{
     text-align: center;
     font-family: var(--fonte-sub-titulo);
@@ -183,7 +190,7 @@ nav a {
 
 #imagem-principal > h1{
     display: inline-block;
-    width: auto;
+    max-width: 300px;
     color: white;
     background-image: none;
     margin: 30px 0px 0px 0px;
@@ -200,6 +207,13 @@ nav a {
     background-color: rgba(255, 255, 255, 0.137);
     padding: 5px;
     font-weight: 400;
+}
+
+@media (max-width:600px){
+    #imagem-principal > p {
+        font-size: 0.9em;
+        max-width: 170px;
+    }
 }
 
 /*--------------------
@@ -440,6 +454,9 @@ nav a {
     .container-card-events h2{
         font-weight: bolder;
     }
+    #container-events{
+        padding: 0px;
+    }
 }
 
 .container-card-events > p{
@@ -449,7 +466,7 @@ nav a {
 
 .container-card-events > button {
     display: block;
-    min-width: 180px;
+    max-width: 250px;
     align-self: center;
     padding: 12px 25px;
     font-size: 0.95em;
@@ -466,21 +483,21 @@ nav a {
 #card-events1{
     background: url('../assets/img/casamento-1.png') center center scroll;
     background-size: cover;
-    width: 100%;
+    max-width: 100%;
     height: 200px;
 }
 
 #card-events2{
     background: url('../assets/img/xvanos.png') center center no-repeat scroll;
     background-size: cover;
-    width: 100%;
+    max-width: 100%;
     height: 200px;
 }
 
 #card-events3{
     background: url('../assets/img/formatura.png') center center no-repeat scroll;
     background-size: cover;
-    width: 100%;
+    max-width: 100%;
     height: 200px;
 }
 
@@ -667,7 +684,7 @@ nav a {
 }
 
 .perfil-foto img {
-    width: 200px;
+    max-width: 200px;
     height: 200px;
     margin: 40px 0px;
     object-fit: cover;
@@ -677,6 +694,7 @@ nav a {
 }
 
 .perfil-texto h2 {
+    max-width: 300px;
     font-size: 2.4em;
     color: var(--cor0);
     margin-bottom: 15px;
@@ -1078,7 +1096,7 @@ nav a {
 ----------------------*/
 .btn-abrir-modal {
     display: block;
-    min-width: 180px;
+    max-width: 180px;
     margin: 30px auto 0;
     padding: 12px 25px;
     font-size: 0.95em;
