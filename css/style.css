@@ -285,7 +285,7 @@ nav a {
 
 @media (max-width:600px){
     #frase h3{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
     #frase h2{
         padding: 20px;
@@ -297,10 +297,16 @@ nav a {
         padding: 0px 20px;
         font-size: 0.8em;
         text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.151);
+        
     }
     #container-sobre-nos{
         text-indent: 10px;
-}
+    }
+    .card-sobre-nos h2{
+        font-size: 1.4;
+        font-weight: bolder;
+    }
+
 
 
 }
