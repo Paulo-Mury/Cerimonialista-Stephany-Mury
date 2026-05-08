@@ -172,7 +172,7 @@ nav a {
     position:absolute;
     text-align: center;
     bottom: 0px;
-    left: 50%;
+    left: 50%; 
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.137);
     padding: 5px;
