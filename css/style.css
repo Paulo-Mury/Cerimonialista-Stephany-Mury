@@ -189,11 +189,10 @@ nav a {
     color: black;
     background-color: #3b2a22;
     text-align: center;
-    text-align: justify;
     font-weight: 500;
     text-indent: 30px;
-    max-width: 80%;
-    justify-self: center;
+    max-width: 85%;
+    margin: 0 auto;
     padding: 10px;
 }
 
