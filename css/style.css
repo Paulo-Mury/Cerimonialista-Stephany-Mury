@@ -12,7 +12,9 @@
     --fonte-sub-titulo: "Molle", cursive;
     --fonte-paragrafo: "Montserrat", sans-serif;
 }
-
+/*--------------------
+         GERAL
+----------------------*/
 *{
     margin: 0px;
     padding: 0px;
@@ -28,6 +30,10 @@ body{
     background-color: black;
 }
 
+/*--------------------
+        MAIN
+----------------------*/
+
 main{
     width: 100%;
     min-height: 100vh;
@@ -35,7 +41,7 @@ main{
 }
 
 main h1{
-    max-width: 600px;
+    max-width: 35%;
     font-family: var(--fonte-titulo);
     font-size: 2.6em;
     color: var(--cor1);
@@ -44,6 +50,20 @@ main h1{
     margin-bottom: 80px;
     font-weight: normal;
     background-image: linear-gradient(to right, var(--cor0), rgba(255, 255, 255, 0.836));
+}
+
+@media (max-width: 750px){
+    main h1{
+        font-size: 2.0em;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 550px){
+    main h1{
+        max-width: 50%;
+        font-size: 1.5em;
+    }
 }
 
 main h2{
@@ -59,6 +79,9 @@ main p {
     text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.151);
 }
 
+/*--------------------
+        HEADER
+----------------------*/
 header {
     position: fixed;
     z-index: 999;
@@ -153,6 +176,9 @@ nav a {
     }
 }
 
+/*--------------------
+    IMAGEM PRINCIPAL
+----------------------*/
 #imagem-principal{
     padding-top: 80px;
     text-align: center;
@@ -183,11 +209,14 @@ nav a {
     font-weight: 400;
 }
 
+/*--------------------
+       SOBRE NÓS
+----------------------*/
+
 #sobre{
     padding-top: 60px;
     padding-bottom: 70px;
 }
-
 #container-sobre-nos{
     color: black;
     text-align: center;
@@ -253,6 +282,24 @@ nav a {
     text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.151);
 }
 
+@media (max-width:600px){
+    #frase h3{
+        font-size: 0.7em;
+    }
+    #frase h2{
+        padding: 20px;
+        font-size: 1.4em;
+    }
+
+    #frase p{
+        padding: 0px 20px;
+        font-size: 0.8em;
+        text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.151);
+    }
+}
+/*--------------------
+        PACOTES
+----------------------*/
 #pacotes{
     padding-top: 60px;
     padding-bottom: 70px;
@@ -349,6 +396,9 @@ nav a {
     }
 }
 
+/*--------------------
+        EVENTOS
+----------------------*/
 #container-events{
     display: flex;
     flex-wrap: wrap;
@@ -412,6 +462,9 @@ nav a {
     height: 200px;
 }
 
+/*--------------------
+        GALERIA
+----------------------*/
 #galeria{
     padding: 80px 0px;
 }
@@ -470,6 +523,9 @@ nav a {
     }
 }
 
+/*--------------------
+        BLOG
+----------------------*/
 #container-card-blog{
     display: flex;
     flex-wrap: wrap;
@@ -552,6 +608,8 @@ nav a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
+    min-width: 0;
 }
 
 .card-blog > h2{
@@ -562,6 +620,9 @@ nav a {
     font-size: 0.8em;
 }
 
+/*--------------------
+      SOBRE MIM
+----------------------*/
 #sobre-mim {
     background-color: #fefefe;
     padding: 60px 0px;
@@ -592,7 +653,7 @@ nav a {
 }
 
 .perfil-texto h2 {
-    font-size: 2.8em;
+    font-size: 2.4em;
     color: var(--cor0);
     margin-bottom: 15px;
     margin-top: 80px;
@@ -623,8 +684,14 @@ nav a {
         width: 130px;
         height: 130px;
     }
+    .frase-efeito p{
+        font-size: 0.3em;
+    }
 }
 
+/*--------------------
+      EXPERIÊNCIA
+----------------------*/
 #experiencia{
     text-align: center;
     padding: 60px 20px;
@@ -668,6 +735,9 @@ nav a {
   margin-bottom: 10%;
 }
 
+/*--------------------
+     DEPOIMENTOS
+----------------------*/
 #depoimentos {
   padding: 60px 0;
   width: 100%;
@@ -876,6 +946,9 @@ nav a {
   }
 }
 
+/*--------------------
+        FOOTER
+----------------------*/
 .footer-principal {
     background-color: #ffffff;
     padding: 60px 20px 30px;
@@ -975,6 +1048,9 @@ nav a {
     }
 }
 
+/*--------------------
+        MODAL
+----------------------*/
 .btn-abrir-modal {
     display: block;
     min-width: 180px;
