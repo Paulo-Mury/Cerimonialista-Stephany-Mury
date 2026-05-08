@@ -169,14 +169,38 @@ modal.addEventListener('click', (e) => {
     if (e.target === modal) fecharELimparModal();
 });
 
-// CONFIGURAÇÃO FORMULÁRIO MODAL 
 document.addEventListener('submit', (e) => {
     if (e.target.id === 'form-orcamento') {
         e.preventDefault();
 
-        const id = "4410848015600"; 
+        const idDona = "A5B5C2D1E9F5G9H1I2J6K7L1M1"; 
+        const idSecretaria = "X5Y5Z2A1B9C7D4E6F3G4H3I3J0";
+
+        let ultimoDestino = localStorage.getItem('ultimoContato');
         
-        const n = id.split('').map(d => parseInt(d) + 1).join('');
+        let idEscolhido;
+        let proximoDestino;
+
+        if (!ultimoDestino) {
+    
+            const sorteio = Math.random() < 0.5;
+            proximoDestino = sorteio ? 'dona' : 'secretaria';
+            idEscolhido = sorteio ? idDona : idSecretaria;
+            console.log("Primeiro acesso: Sorteado para " + proximoDestino);
+        } else {
+            if (ultimoDestino === 'dona') {
+                idEscolhido = idSecretaria;
+                proximoDestino = 'secretaria';
+            } else {
+                idEscolhido = idDona;
+                proximoDestino = 'dona';
+            }
+            console.log("Rodízio sequencial: Vez de " + proximoDestino);
+        }
+
+        localStorage.setItem('ultimoContato', proximoDestino);
+
+        const n = idEscolhido.replace(/\D/g, '');
         
         const nome = document.getElementById('nome').value;
         const evento = document.getElementById('evento').value;
