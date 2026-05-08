@@ -120,7 +120,7 @@ nav a {
     border-radius: 2px;
 }
 
-#menulateral{
+#menulateral.offcanvas{
     width: 40% !important;
 }
 
