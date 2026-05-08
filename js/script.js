@@ -158,6 +158,11 @@ const fecharELimparModal = () => {
 document.querySelectorAll('.btn-abrir-modal').forEach(btn => {
     btn.addEventListener('click', () => modal.classList.add('ativo'));
 });
+
+document.querySelectorAll('.card-packs').forEach(card => {
+    card.addEventListener('click', () => modal.classList.add('ativo'));
+});
+
 btnFechar.addEventListener('click', fecharELimparModal);
 
 modal.addEventListener('click', (e) => {

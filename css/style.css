@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Molle:ital@1&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Molle:ital@1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --cor0: #A68160;
@@ -56,7 +54,7 @@ main p {
     font-family: var(--fonte-paragrafo);
     line-height: 1.7em;
     font-size: 1.1em;
-    text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.274);
+    text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.151);
 }
 
 header {
@@ -120,7 +118,7 @@ nav a {
     border-radius: 2px;
 }
 
-@media (min-width: 835px) {
+@media (min-width: 836px) {
     .navbar-brand-mobile, .hamburguer-btn {
         display: none;
     }
@@ -223,8 +221,7 @@ nav a {
 }
 
 .card-sobre-nos > p{
-    padding: 5px;
-    text-align: left;
+    padding: 0px 10px;
     text-align: justify;
 }
 
@@ -246,7 +243,7 @@ nav a {
 #frase p{
     padding: 0px 20px;
     font-size: 0.9em;
-    text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.274);
+    text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.151);
 }
 
 #pacotes{
@@ -280,6 +277,7 @@ nav a {
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.219);
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .card-packs.card-packs-destaque {
@@ -333,15 +331,15 @@ nav a {
 
 @media (max-width: 768px){
     .card-packs.card-packs-destaque{
-        transform: scale(1);
         margin: 10px 0;
-        transform: scale(1.1) translateY(-1px);
+        transform: scale(1.05) translateY(-1px);
     }
 
     #container-card-packs{
         gap: 30px;
         display: grid;
-        columns: 1;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -564,7 +562,7 @@ nav a {
 }
 
 .container-sobre {
-    max-width: 800px;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -590,6 +588,7 @@ nav a {
     font-size: 2.8em;
     color: var(--cor0);
     margin-bottom: 15px;
+    margin-top: 80px;
 }
 
 .frase-efeito {
@@ -606,6 +605,7 @@ nav a {
     color: #666;
     margin-bottom: 15px;
     font-size: 1.05em;
+    margin-bottom: 80px;
 }
 
 #experiencia{
@@ -614,6 +614,7 @@ nav a {
     background: url('/assets/img/Gemini_Generated_Image_ta2ohqta2ohqta2o.png') center center no-repeat scroll;
     background-size: cover;
     margin-bottom: 20px;
+    min-height: 600px;
 }
 
 #experiencia h1{
@@ -623,6 +624,7 @@ nav a {
     font-size: 2.0em;
     color: white;
     background-image: none;
+    margin-top: 100px;
 }
 
 #container-card-experiencia{
@@ -645,12 +647,12 @@ nav a {
     margin-top: 10px;
 }
 
-.container-card-depoimentos{
-    margin-bottom: 10%;
+.container-card-depoimentos {
+  margin-bottom: 10%;
 }
 
 #depoimentos {
-  padding: 60px 40px;
+  padding: 60px 0;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
@@ -658,11 +660,12 @@ nav a {
 }
 
 #depoimentos h2 {
-  font-size: 2.1rem;
+  font-size: 2.1em;
   color: #3b2a22;
   text-align: center;
   margin-bottom: 50px;
   letter-spacing: -0.5px;
+  padding: 0 20px;
 }
 
 #depoimentos h2::after {
@@ -680,6 +683,7 @@ nav a {
   display: flex;
   align-items: center;
   gap: 16px;
+  padding: 0 8px;
 }
 
 .carousel-track-outer {
@@ -701,7 +705,7 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 220px;
+  min-height: 540px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 
@@ -711,7 +715,7 @@ nav a {
 
 .card-depoimento::before {
   content: '\201C';
-  font-size: 5rem;
+  font-size: 5em;
   color: #ffffff;
   opacity: 0.2;
   position: absolute;
@@ -722,7 +726,12 @@ nav a {
 }
 
 .card-depoimento p {
-  font-size: 0.95rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 20;
+  -webkit-box-orient: vertical;
+  line-clamp: 20;
+  overflow: hidden;
+  font-size: 0.9em;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.95);
   margin-top: 40px;
@@ -736,7 +745,7 @@ nav a {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   color: #ffffff;
   margin-top: 20px;
   padding-top: 14px;
@@ -792,13 +801,13 @@ nav a {
   transform: scale(1.3);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   #depoimentos {
-    padding: 40px 24px;
+    padding: 40px 0;
   }
 
   #depoimentos h2 {
-    font-size: 2rem;
+    font-size: 2em;
     margin-bottom: 36px;
   }
 
@@ -808,27 +817,29 @@ nav a {
 
   .card-depoimento {
     flex: 0 0 calc((100% - 20px) / 2);
+    min-height: 480px;
   }
 
   .carousel-btn {
     width: 40px;
     height: 40px;
-    font-size: 1.1rem;
+    font-size: 1.1em;
   }
 }
 
-@media (max-width: 560px) {
+
+@media (max-width: 750px) {
   #depoimentos {
-    padding: 32px 16px;
+    padding: 28px 0;
   }
 
   #depoimentos h2 {
-    font-size: 1.6rem;
-    margin-bottom: 28px;
+    font-size: 1.5em;
+    margin-bottom: 24px;
   }
 
   .carousel-wrapper {
-    gap: 10px;
+    gap: 6px;
   }
 
   .carousel-track-outer {
@@ -837,14 +848,14 @@ nav a {
 
   .card-depoimento {
     flex: 0 0 100%;
-    min-height: 200px;
-    padding: 28px 22px 22px;
+    min-height: 420px;
+    padding: 26px 20px 20px;
   }
 
   .carousel-btn {
-    width: 36px;
-    height: 36px;
-    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    font-size: 0.85rem;
   }
 }
 
@@ -1022,7 +1033,7 @@ nav a {
     border-radius: 12px;
     background-color: #fafafa;
     font-family: inherit;
-    font-size: 0.95rem;
+    font-size: 0.95em;
     outline: none;
     transition: all 0.3s ease;
     box-sizing: border-box;
@@ -1049,7 +1060,7 @@ nav a {
     border: none;
     border-radius: 12px;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1em;
     letter-spacing: 0.5px;
     cursor: pointer;
     transition: all 0.3s ease;
