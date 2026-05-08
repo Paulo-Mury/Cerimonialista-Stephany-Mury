@@ -181,13 +181,11 @@ nav a {
 
 #sobre{
     padding-top: 60px;
-    background-color: aqua;
     padding-bottom: 70px;
 }
 
 #container-sobre-nos{
     color: black;
-    background-color: #3b2a22;
     text-align: center;
     font-weight: 500;
     text-indent: 30px;
@@ -563,20 +561,21 @@ nav a {
 
 #sobre-mim {
     background-color: #fefefe;
-    margin-top: 50px;
+    padding: 60px 0px;
+    text-align: center;
 }
 
 .container-sobre {
-    max-width: 1000px;
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-self: center;
     align-items: center;
     gap: 30px;
 }
 
 .perfil-foto{
-    justify-self: center;
+    margin: 0 auto;
     padding-top: 20px;
 }
 
@@ -611,6 +610,16 @@ nav a {
     margin-bottom: 15px;
     font-size: 1.05em;
     margin-bottom: 80px;
+}
+
+@media (max-width: 480px) {
+    .perfil-texto h2 {
+        font-size: 1.8em;
+    }
+    .perfil-foto img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 #experiencia{
