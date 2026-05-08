@@ -257,6 +257,16 @@ nav a {
     color: #8E735B;
 }
 
+.card-sobre-nos h2::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 1px;
+    background: #8E735B;
+    margin: 14px auto 0;
+    border-radius: 2px;
+}
+
 .card-sobre-nos > p{
     padding: 0px 10px;
     text-align: justify;
@@ -303,7 +313,7 @@ nav a {
         text-indent: 10px;
     }
     .card-sobre-nos h2{
-        font-size: 1.4;
+        font-size: 1.6;
         font-weight: bolder;
     }
 
