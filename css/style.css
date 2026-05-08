@@ -121,7 +121,7 @@ nav a {
 }
 
 #menulateral{
-    width: 220px !important;
+    width: 40% !important;
 }
 
 @media (min-width: 836px) {
@@ -577,9 +577,8 @@ nav a {
 }
 
 .perfil-foto{
-    margin: 0 auto;
     padding-top: 20px;
-    justify-self: center;
+    text-align: center;
 }
 
 .perfil-foto img {
