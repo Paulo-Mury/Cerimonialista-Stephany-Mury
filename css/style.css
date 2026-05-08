@@ -180,12 +180,14 @@ nav a {
 }
 
 #sobre{
+    background-color: #8d5d5d;
     padding-top: 60px;
     padding-bottom: 70px;
 }
 
 #container-sobre-nos{
     color: black;
+    background-color: #555;
     text-align: center;
     text-align: justify;
     font-weight: 500;
