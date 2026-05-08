@@ -703,6 +703,7 @@ nav a {
 @media (max-width: 480px) {
     .perfil-texto h2 {
         font-size: 2.4em;
+        font-weight: bolder;
     }
     .perfil-foto img {
         width: 130px;
