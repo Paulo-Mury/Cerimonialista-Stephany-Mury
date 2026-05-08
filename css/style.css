@@ -289,6 +289,7 @@ nav a {
     #frase h2{
         padding: 20px;
         font-size: 1.4em;
+        font-weight: bolder;
     }
 
     #frase p{
@@ -420,6 +421,12 @@ nav a {
     padding-top: 20px;   
 }
 
+@media (max-width: 550px) {
+    .container-card-events h2{
+        font-weight: bolder;
+    }
+}
+
 .container-card-events > p{
     padding: 20px 0px 40px 0px;
     font-size: 1.01em;
@@ -516,6 +523,7 @@ nav a {
     }
     .card-gallery{
         max-width: 100%;
+        padding: 5px 0px;
     }
     .card-gallery img{
         width: 100%;
