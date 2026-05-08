@@ -480,6 +480,12 @@ nav a {
     border: 1px solid var(--cor0);
 }
 
+@media (max-width: 750px){
+    .container-card-events > button{
+        font-size: 0.76em;
+    }
+}
+
 #card-events1{
     background: url('../assets/img/casamento-1.png') center center scroll;
     background-size: cover;
@@ -1096,7 +1102,7 @@ nav a {
 ----------------------*/
 .btn-abrir-modal {
     display: block;
-    max-width: 180px;
+    max-width: 250px;
     margin: 30px auto 0;
     padding: 12px 25px;
     font-size: 0.95em;
@@ -1109,6 +1115,13 @@ nav a {
     border: 1px solid var(--cor0);
     cursor: pointer;
 }
+
+@media (max-width: 750px){
+    .btn-abrir-modal{
+        font-size: 0.76em;
+    }
+}
+
 
 .modal-overlay {
     position: fixed;
