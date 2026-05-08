@@ -120,8 +120,8 @@ nav a {
     border-radius: 2px;
 }
 
-#menulateral.offcanvas{
-    width: 40% !important;
+#menuLateral {
+    --bs-offcanvas-width: 220px;
 }
 
 @media (min-width: 836px) {
