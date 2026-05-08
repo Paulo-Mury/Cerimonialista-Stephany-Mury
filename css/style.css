@@ -150,7 +150,7 @@ nav a {
 #imagem-principal{
     padding-top: 80px;
     text-align: center;
-    background: url('/assets/img/imagem\ principal.jpg!d') center center no-repeat fixed;
+    background: url('/assets/img/imagem principal.jpg!d') center center no-repeat fixed;
     background-size: cover;
     height: 100vh;
     background-color: rgba(5, 5, 5, 0.226);
@@ -184,6 +184,7 @@ nav a {
 
 #container-sobre-nos{
     color: black;
+    text-align: center;
     text-align: justify;
     font-weight: 500;
     text-indent: 30px;
@@ -253,7 +254,7 @@ nav a {
 
 
 #container-card-packs{
-    background: url('/assets/img/imagem\ fundo\ card\ packs.jfif') center center no-repeat scroll;
+    background: url('/assets/img/imagem fundo card packs.jfif') center center no-repeat scroll;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
