@@ -180,21 +180,21 @@ nav a {
 }
 
 #sobre{
-    width: 100%;
     padding-top: 60px;
+    background-color: aqua;
     padding-bottom: 70px;
-    justify-content: center;
-    text-align: center;
 }
 
 #container-sobre-nos{
     color: black;
+    background-color: #3b2a22;
     text-align: center;
     text-align: justify;
     font-weight: 500;
     text-indent: 30px;
     max-width: 80%;
     justify-self: center;
+    padding: 10px;
 }
 
 #container-card-sobre-nos{
