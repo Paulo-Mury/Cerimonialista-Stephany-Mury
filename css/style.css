@@ -222,7 +222,6 @@ nav a {
 @media (max-width:500px){
     #imagem-principal {
         background: url('../assets/img/pequena/imagem27.jpg') center center no-repeat fixed;
-        background-size: cover;
     }
 }
 
