@@ -214,14 +214,15 @@ nav a {
 
 @media (max-width:700px){
     #imagem-principal {
-        background: url('../assets/img/pequena/imagem27.jpg') center center no-repeat fixed;
+        background: url('../assets/img/pequena/imagem27.jpg') center center no-repeat scroll;
         background-size: cover;
     }
 }
 
 @media (max-width:500px){
     #imagem-principal {
-        background: url('../assets/img/pequena/imagem27.jpg') center center no-repeat fixed;
+        background: url('../assets/img/pequena/imagem27.jpg') center center no-repeat scroll;
+        background-size: cover;
     }
 }
 
