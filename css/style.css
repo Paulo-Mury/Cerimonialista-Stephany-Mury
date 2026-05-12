@@ -185,7 +185,7 @@ nav a {
 #imagem-principal{
     padding-top: 80px;
     text-align: center;
-    background: url('../assets/img/imagem-principal.jpg') center center no-repeat fixed;
+    background: url('../assets/img/grande/imagem27.jpg') center center no-repeat fixed;
     background-size: cover;
     height: 100vh;
     background-color: rgba(5, 5, 5, 0.226);
@@ -212,12 +212,29 @@ nav a {
     font-weight: 400;
 }
 
+@media (max-width:700px){
+    #imagem-principal {
+        background: url('../assets/img/pequena/imagem27.jpg') center center no-repeat fixed;
+        background-size: cover;
+    }
+}
+
+@media (max-width:500px){
+    #imagem-principal {
+        background: url('../assets/img/pequena/imagem27.jpg') center center no-repeat fixed;
+        background-size: cover;
+    }
+}
+
+
 @media (max-width:600px){
     #imagem-principal > p {
         font-size: 0.9em;
         max-width: 170px;
     }
 }
+
+
 
 /*--------------------
        SOBRE NÓS
