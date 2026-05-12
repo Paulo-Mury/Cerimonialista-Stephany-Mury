@@ -110,15 +110,11 @@ header {
     text-decoration: none;
 }
 
-.logo-central {
+.logo-central, .menu-celular img {
     margin: 0 30px;
     width: 50px !important;
     height: 50px !important;
-}
-
-.menu-celular img{
-    width: 50px !important;
-    height: 50px !important;
+    object-fit: contain;
 }
 
 nav a {
