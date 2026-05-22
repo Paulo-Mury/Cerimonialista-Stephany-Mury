@@ -456,7 +456,10 @@ nav a {
         transform: scale(1.10) translateY(0px);
     }
     .card-packs.card-packs-destaque:hover{
-        transform: scale(1.11) translateY(-8px);
+        transform: scale(1.1) translateY(0px);
+    }
+    .card-packs:hover{
+        transform: scale(1.0) translateY(0px);
     }
 
     #container-card-packs{
