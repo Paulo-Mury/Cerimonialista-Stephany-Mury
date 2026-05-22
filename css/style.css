@@ -185,7 +185,7 @@ nav a {
 #imagem-principal{
     padding-top: 80px;
     text-align: center;
-    background: url('../assets/img/grande/imagem27.jpg') center center no-repeat fixed;
+    background: url('../assets/img/principal/imagem27.jpg') center center no-repeat fixed;
     background-size: cover;
     height: 100vh;
     background-color: rgba(5, 5, 5, 0.226);
@@ -214,14 +214,14 @@ nav a {
 
 @media (max-width:700px){
     #imagem-principal {
-        background: url('../assets/img/pequena/imagem27.jpg') center center no-repeat scroll;
+        background: url('../assets/img/principal/imagem27media.jpg') center center no-repeat scroll;
         background-size: cover;
     }
 }
 
 @media (max-width:500px){
     #imagem-principal {
-        background: url('../assets/img/pequena/imagem27.jpg') center center no-repeat scroll;
+        background: url('../assets/img/principal/imagem27pequena.jpg') center center no-repeat scroll;
         background-size: cover;
     }
 }
@@ -356,7 +356,7 @@ nav a {
 }
 
 #container-card-packs{
-    background: url('../assets/img/imagem-fundo-card-packs.png') center center no-repeat scroll;
+    background: url('../assets/img/galeria/imagem-fundo-card-packs.jpg') center center no-repeat scroll;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -366,6 +366,13 @@ nav a {
     padding: 60px 10px;
     width: 100%;
     box-sizing: border-box;
+}
+
+@media (max-width:700px){
+    #container-card-packs {
+        background: url('../assets/img/galeria/imagem-fundo-card-packsmedia.jpg') center center no-repeat scroll;
+        background-size: cover;
+    }
 }
 
 .card-packs{
@@ -423,6 +430,17 @@ nav a {
     list-style: none;
 }
 
+.card-packs.card-packs-destaque > ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    font-family: var(--fonte-paragrafo);
+    color: var(--cor1); 
+    line-height: 1.4;
+    font-size: 0.9em;
+    list-style: none;
+}
+
 .card-packs > ul li::before {
     content: '\2714';
     position: absolute;
@@ -435,7 +453,10 @@ nav a {
 @media (max-width: 768px){
     .card-packs.card-packs-destaque{
         margin: 10px 0;
-        transform: scale(1.05) translateY(-1px);
+        transform: scale(1.10) translateY(0px);
+    }
+    .card-packs.card-packs-destaque:hover{
+        transform: scale(1.11) translateY(-8px);
     }
 
     #container-card-packs{
@@ -507,21 +528,21 @@ nav a {
 }
 
 #card-events1{
-    background: url('../assets/img/casamento-1.png') center center scroll;
+    background: url('../assets/img/eventos/imagem10.jpg') center center scroll;
     background-size: cover;
     max-width: 100%;
     height: 200px;
 }
 
 #card-events2{
-    background: url('../assets/img/xvanos.png') center center no-repeat scroll;
+    background: url('../assets/img/eventos/imagem32.jpg') center center no-repeat scroll;
     background-size: cover;
     max-width: 100%;
     height: 200px;
 }
 
 #card-events3{
-    background: url('../assets/img/formatura.png') center center no-repeat scroll;
+    background: url('../assets/img/eventos/imagem23.jpg') center center no-repeat scroll;
     background-size: cover;
     max-width: 100%;
     height: 200px;
@@ -710,8 +731,8 @@ nav a {
 }
 
 .perfil-foto img {
-    max-width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 40px 0px;
     object-fit: cover;
     border-radius: 50%;
@@ -751,8 +772,8 @@ nav a {
         font-weight: bolder;
     }
     .perfil-foto img {
-        width: 130px;
-        height: 130px;
+        width: 200px;
+        height: 200px;
     }
     .frase-efeito p{
         font-size: 0.3em;
@@ -765,7 +786,7 @@ nav a {
 #experiencia{
     text-align: center;
     padding: 60px 20px;
-    background: url('../assets/img/casamento-2.png') center center no-repeat scroll;
+    background: url('../assets/img/galeria/imagem28.jpg') center center no-repeat scroll;
     background-size: cover;
     margin-bottom: 20px;
     min-height: 600px;

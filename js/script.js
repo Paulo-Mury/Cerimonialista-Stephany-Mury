@@ -173,8 +173,8 @@ document.addEventListener('submit', (e) => {
     if (e.target.id === 'form-orcamento') {
         e.preventDefault();
 
-        const idDona = "A5B5C2D1E9F5G9H1I2J6K7L1M1"; 
-        const idSecretaria = "X5Y5Z2A1B9C7D4E6F3G4H3I3J0";
+        const idDona = "A5B5C2D1E9F9G6H6I8J2K7L2M1"; 
+        const idSecretaria = "A5B5C2D1E9F7G2H3I0J6K5L4M2";
 
         let ultimoDestino = localStorage.getItem('ultimoContato');
         
