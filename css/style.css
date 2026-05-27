@@ -150,7 +150,7 @@ nav a {
     --bs-offcanvas-width: 220px;
 }
 
-@media (min-width: 836px) {
+@media (min-width: 849px) {
     .navbar-brand-mobile, .hamburguer-btn {
         display: none;
     }
@@ -164,7 +164,7 @@ nav a {
     }
 }
 
-@media (max-width: 835px) {
+@media (max-width: 848px) {
     .menu-desktop {
         display: none !important;
         visibility: hidden;
