@@ -2,7 +2,7 @@
 
 Site institucional desenvolvido para profissional de cerimonial e eventos. Focado em apresentação de serviços, portfólio e captação de clientes.
 
-🔗 **[Ver site ao vivo](https://cerimonialista-stephany-mury.vercel.app/)**
+🔗 **[Ver site ao vivo](https://www.cerimonialistastephanymury.com.br)**
 
 ---
 
