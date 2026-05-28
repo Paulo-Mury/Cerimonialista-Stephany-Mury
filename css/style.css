@@ -185,7 +185,7 @@ nav a {
 #imagem-principal{
     padding-top: 80px;
     text-align: center;
-    background: url('../assets/img/principal/imagem27.jpg') center center no-repeat fixed;
+    background: url('../assets/img/principal/imagem-principal2.jpg') center top no-repeat fixed;
     background-size: cover;
     height: 100vh;
     background-color: rgba(5, 5, 5, 0.226);
@@ -214,15 +214,15 @@ nav a {
 
 @media (max-width:700px){
     #imagem-principal {
-        background: url('../assets/img/principal/imagem27media.jpg') center center no-repeat scroll;
+        background: url('../assets/img/principal/imagem-principalmedia2.jpg') center center no-repeat scroll;
         background-size: cover;
     }
 }
 
 @media (max-width:500px){
     #imagem-principal {
-        background: url('../assets/img/principal/imagem27pequena.jpg') center center no-repeat scroll;
-        background-size: cover;
+        background: url('../assets/img/principal/imagem-principalpequena2.jpg') center top no-repeat scroll;
+       
     }
 }
 
